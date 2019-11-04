@@ -1,0 +1,13 @@
+/node_modules
+/.docz
+/.DS_Store
+./.idea
+yarn.lock
+yarn-error.log
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/portal-modules.iml
+/.idea/vcs.xml
+/.idea/*

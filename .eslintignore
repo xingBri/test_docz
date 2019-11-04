@@ -1,0 +1,5 @@
+lib/*
+*.ts
+*.tsx
+./legacyCodeBase
+src/public/fabric.js

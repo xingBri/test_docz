@@ -1,0 +1,59 @@
+// {
+//   "extends": "eslint-config-umi"
+// }
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint-config-umi",
+    "airbnb",
+    "prettier" // 必须位于最后，覆盖代码风格相关 rules
+  ],
+  "plugins": ["react-hooks"],
+  "rules": {
+    // 数据库字段中存在小写字母下划线命名方式
+    "camelcase": "off",
+    // 为便于代码阅读，允许函数晚于使用定义
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    // GraphQL 中用于自定义保留字段
+    "no-underscore-dangle": "off",
+    // GraphQL 中 Query 语句和返回名称相同
+    "no-shadow": "off",
+
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-first-prop-new-line": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-max-props-per-line": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/destructuring-assignment": "off",
+    // react 支持 .js
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    // 解决window下换行格式的报错
+    "linebreak-style": "off",
+    "no-return-assign": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "jsx-a11y/href-no-hash": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "no-param-reassign": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "lib": true
+  },
+  "root": true
+}

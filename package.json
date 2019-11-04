@@ -1,0 +1,19 @@
+{
+  "name": "test_docz",
+  "version": "0.0.4",
+  "private": true,
+  "scripts": {
+    "dev": "docz dev",
+    "docz:build": "docz build",
+    "rm": "rm -rf ./node_modules && rm -rf ./package-lock.json"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "devDependencies": {
+    "docz": "2.0.0-rc.68",
+    "docz-plugin-css": "^0.11.0",
+    "typescript": "^3.6.4"
+  }
+}
